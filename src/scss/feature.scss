@@ -1,0 +1,32 @@
+.Container{
+    padding: 50px 12%;
+    font-size: 22px;
+    color: white;
+    .row{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        .text-col{
+            flex-basis: 50%;
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            p{
+                font-size: 17px;
+                line-height: 30px;
+            }
+        }
+        .img-col{
+            flex-basis: 50%;
+            img{
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="Container">
+      <nav>
+        <div class="Item">
+          <img src="../images/logo.png" class="logo" />
+          <ul>
+            <li>首頁</li>
+            <li>節目</li>
+            <li>電影</li>
+            <li>最新熱門影片</li>
+            <li>我的片單</li>
+            <li>按照語言瀏覽</li>
+          </ul>
+        </div>
+        <div class="Edit">
+          <a href="#">
+            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+          </a>
+          <li>兒童專區</li>
+          <a href="#">
+            <font-awesome-icon icon="fa-regular fa-bell" />
+          </a>
+          <div class="account" @mouseenter="showAccountMenuItem" @mouseleave="closeAccountMenuItem">
+            <img src="../images/user.jpg" alt="" />
+            <a href="" :style="account"><font-awesome-icon icon="fa-solid fa-caret-down" /></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
