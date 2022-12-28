@@ -5,7 +5,7 @@
     url(../images/header-image.png);
   background-size: cover;
   background-position: center;
-  padding: 15px 4%;
+  padding: 15px 3%;
   position: relative;
   color: white;
   list-style: none;
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 5px 0px;
     .Item {
       display: flex;
       justify-content: space-between;
@@ -36,6 +36,7 @@
       display: flex;
       align-items: center;
       cursor: pointer;
+      position: relative;
       a {
         font-size: 20px;
         color: white;
@@ -44,17 +45,108 @@
       li {
         margin-right: 15px;
       }
-      .account{
+      .account {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
+        img {
           width: 35px;
           border-radius: 5px;
           margin-right: 10px;
         }
+        .account-menu {
+          position: absolute;
+          top: 55px;
+          right: 10px;
+          width: 220px;
+          height: 280px;
+          background-color: rgba(0, 0, 0, 0.6);
+          border: 1px solid rgba(0, 0, 0, 0.5);
+          padding: 20px 10px;
+          z-index: 1;
+          ul {
+            list-style: none;
+            li{
+              display: flex;
+              align-items: center;
+              margin-bottom: 10px;
+              width: 100%;
+              a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 45px;
+                margin-right: 8px;
+                img{
+                  margin: 0 auto;
+                }
+              }
+              span:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+          .logout{
+            width: 100%;
+            border-top: 1px solid gray;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
       }
-
     }
   }
+  .header-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    h1{
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: 600;
+    }
+    h3{
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    .emailSignup{
+      background: #fff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      overflow: hidden;
+      width: 500px;
+      input{
+        flex: 1;
+        border: 0;
+        outline: 0;
+        margin-left: 20px;
+      }
+      button{
+        background: #db0001;
+        border: 0;
+        outline: 0;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 15px 30px;
+      }
+    }
+  }
+}
+
+.swiperTest{
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  background: #fff;
 }
