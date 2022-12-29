@@ -1,0 +1,46 @@
+.Container {
+  width: 100%;
+  padding: 0px 100px;
+  margin-top: 30px;
+  .member-footer-service {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 0 4%;
+    .service-code {
+      cursor: pointer;
+      border: 1px solid gray;
+      padding: 5px;
+      background: none;
+      color: gray;
+    }
+    .service-code:hover {
+      color: white;
+    }
+  }
+}
+
+.member-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 0 4%;
+  .member-footer-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .member-footer-link-wrapper {
+      flex-basis: 25%;
+      font-size: 13px;
+      color: gray;
+      list-style: none;
+      margin-bottom: 16px;
+      cursor: pointer;
+    }
+    .member-footer-link-wrapper:hover {
+      text-decoration: underline;
+    }
+  }
+}

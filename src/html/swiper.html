@@ -7,119 +7,54 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="skillSection">
-      <div class="skill-Bx">
-        <swiper
-          :slidesPerView="1"
-          :spaceBetween="1"
-          :navigation="true"
-          :pagination="{
+    <div class="swiperArea">
+    <div @mouseenter="show" @mouseleave="close" class="title">
+      <h2>亞洲驚悚節目</h2>
+      <transition>
+        <span v-show="isShow">探索全部</span>
+      </transition>
+    </div>
+    <swiper
+      :slidesPerView="1"
+      :spaceBetween="1"
+      :navigation="true"
+      :pagination="{
           clickable: true,
         }"
-          :breakpoints="{
+      :breakpoints="{
           '768': {
-            slidesPerView: 3,
+            slidesPerView: 5.5,
             spaceBetween: 1,
           },
         }"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide
-            ><div class="Item">
-              <div class="test">
-                <h1>1</h1>
-              </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div class="Item">
-              <div class="test">
-                <h1>2</h1>
-              </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div class="Item">
-              <div class="test">
-                <h1>3</h1>
-              </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div class="Item">
-              <div class="test">
-                <h1>4</h1>
-              </div>
-            </div></swiper-slide
-          >
-          <swiper-slide
-            ><div class="Item">
-              <div class="test">
-                <h1>5</h1>
-              </div>
-            </div></swiper-slide
-          >
-        </swiper>
+      :modules="modules"
+      class="mySwiper"
+    >
+      <swiper-slide
+        ><img src="../images/Neftliximg01.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg02.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg03.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg04.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg05.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg06.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../images/Neftliximg07.jpg" alt=""
+      /></swiper-slide>
+    </swiper>
 
-        <p class="append-buttons"></p>
-      </div>
-    </div>
-    <div class="progressBar">
-      <div class="container">
-        <div class="card">
-          <div class="percent" style="--clr: #04fc43; --num: 0.85">
-            <div class="dot"></div>
-            <svg>
-              <circle cx="70" cy="70" r="70"></circle>
-              <circle cx="70" cy="70" r="70"></circle>
-            </svg>
-            <div class="number">
-              <h2>85<span>%</span></h2>
-              <p>Html</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="percent" style="--clr: #fee800; --num: 0.72">
-            <div class="dot"></div>
-            <svg>
-              <circle cx="70" cy="70" r="70"></circle>
-              <circle cx="70" cy="70" r="70"></circle>
-            </svg>
-            <div class="number">
-              <h2>72<span>%</span></h2>
-              <p>Html</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="percent" style="--clr: #ff00be; --num: 0.6">
-            <div class="dot"></div>
-            <svg>
-              <circle cx="70" cy="70" r="70"></circle>
-              <circle cx="70" cy="70" r="70"></circle>
-            </svg>
-            <div class="number">
-              <h2>60<span>%</span></h2>
-              <p>Html</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="percent" style="--clr: #06ccff; --num: 0.95">
-            <div class="dot"></div>
-            <svg>
-              <circle cx="70" cy="70" r="70"></circle>
-              <circle cx="70" cy="70" r="70"></circle>
-            </svg>
-            <div class="number">
-              <h2>95<span>%</span></h2>
-              <p>Html</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="append-buttons"></p>
+  </div>
+  
   </body>
 </html>
